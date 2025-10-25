@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Ngô Thị Thương</title>
+  <meta name="description" content="Photo and UI gallery." />
+  <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+  <a class="logo" href="index.html"><span aria-hidden="true">🌸</span><span class="logo-text">Ngô Thị Thương</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul id="menu" class="menu">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a aria-current="page" href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a href="map.html">Map</a></li><li><a href="policy.html">Policy</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+</header>
+
+<main class="container">
+  <h1>Gallery</h1>
+
+  <!-- ===== Project 1: Data Visualization ===== -->
+  <section aria-labelledby="g-viz">
+    <h2 id="g-viz">Interactive Chart — Data Visualization</h2>
+
+    <section class="gallery">
+      <figure>
+        <img src="assets/img/project_chart.jpg"
+             alt="Interactive Chart cover slide"
+             width="960" height="540" loading="lazy" decoding="async">
+        <figcaption>Cover — “Make it simple, but special!”.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/img/viz_option.png"
+             alt="Menu screen with options: Add Data, Upload File, Prediction"
+             width="960" height="540" loading="lazy" decoding="async">
+        <figcaption>Entry screen — choose Add Data, Upload File, or Prediction.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/img/viz_add_data.png"
+             alt="Add Data page with quick sort, binary search and input form"
+             width="960" height="540" loading="lazy" decoding="async">
+        <figcaption>Add Data — sort/search & form to append records.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/img/viz_upload.png"
+             alt="Upload CSV page with fields for label and data"
+             width="960" height="540" loading="lazy" decoding="async">
+        <figcaption>Upload CSV — parse file for accurate charts.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/img/viz_linear_regression.png"
+             alt="Linear Regression prediction screen with CSV input and result"
+             width="960" height="540" loading="lazy" decoding="async">
+        <figcaption>Extra feature — Linear Regression prediction.</figcaption>
+      </figure>
+    </section>
+  </section>
+
+  <!-- ===== Project 2: Plants vs Zombies (OOP) ===== -->
+  <section aria-labelledby="g-pvz" style="margin-top:1.25rem">
+    <h2 id="g-pvz">Plants vs Zombies — OOP Project</h2>
+
+    <section class="gallery">
+      <figure>
+        <img src="assets/img/project_pvz.jpg"
+             alt="Plants vs Zombies gameplay poster"
+             width="960" height="540" loading="lazy" decoding="async">
+        <figcaption>Project cover — gameplay concept.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/img/pvz_class_diagram.png"
+             alt="UML class diagram of Plants and Zombies managers, waves and entities"
+             width="1100" height="720" loading="lazy" decoding="async">
+        <figcaption>UML class diagram — managers, entities, and relationships.</figcaption>
+      </figure>
+    </section>
+  </section>
+
+  <!-- (Optional) Image credits -->
+  <section aria-labelledby="credits" style="margin-top:1rem">
+    <h2 id="credits">Image credits</h2>
+    <ul>
+      <li>All screenshots are from my own projects listed on the Projects page.</li>
+    </ul>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Ngô Thị Thương.</small>
+</footer>
+</body>
+</html>

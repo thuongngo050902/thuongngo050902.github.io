@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home — Ngô Thị Thương</title>
+  <meta name="description" content="Personal website: portfolio, blog, contact." />
+  <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+  <a class="logo" href="index.html"><span aria-hidden="true">🌸</span><span class="logo-text">Ngô Thị Thương</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul id="menu" class="menu">
+      <li><a aria-current="page" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="policy.html">Policy</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+</header>
+
+<main id="content" class="container" tabindex="-1">
+  <section class="hero">
+    <div class="hero__text">
+      <h1>Hello, I'm <span class="accent">
+        Ngô Thị Thương</span></h1>
+      <p>I'm a Computer Science student at International University, passionate about data systems and software development. 
+My goal is to become a skilled Data Engineer who can build reliable and scalable data pipelines for real-world applications.</p>
+      <p class="cta">
+        <a class="btn" href="projects.html">See Projects</a>
+        <a class="btn btn--ghost" href="contact.html">Contact me</a>
+      </p>
+    </div>
+    <figure class="hero__media">
+      <img src="assets/img/hero.jpg" alt="thuong" width="960" height="540" loading="eager">
+      <figcaption>Try to be better every day, learn programming, practice coding and be good at profession</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="features" class="features">
+    <h2 id="features">What’s inside</h2>
+    <div class="grid-3">
+      <article class="card">
+        <h3>Portfolio</h3>
+        <p>Small projects with code and write-ups.</p>
+        <a class="link" href="projects.html">Explore →</a>
+      </article>
+      <article class="card">
+        <h3>Gallery</h3>
+        <p>UI screenshots and responsive mockups.</p>
+        <a class="link" href="gallery.html">View →</a>
+      </article>
+      <article class="card">
+        <h3>Blog</h3>
+        <p>Notes on HTML, CSS, a11y, and study life.</p>
+        <a class="link" href="blog.html">Read →</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Ngô Thị Thương · Images credited in README.</small>
+</footer>
+</body>
+</html>

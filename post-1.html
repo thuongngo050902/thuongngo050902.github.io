@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML5 semantics made simple — Ngô Thị Thương</title>
+  <meta name="description" content="Post: HTML5 semantics and accessibility basics." />
+  <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+  <a class="logo" href="index.html"><span aria-hidden="true">🌸</span><span class="logo-text">Ngô Thị Thương</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul id="menu" class="menu">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a href="map.html">Map</a></li><li><a href="policy.html">Policy</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+</header>
+
+<main class="container">
+  <article>
+    <header>
+      <h1>Building My First Data Visualization Project</h1>
+      <time datetime="2025-10-25">Published on Oct 25, 2025</time>
+    </header>
+
+    <p>
+      During the <strong>Algorithms and Data Structures</strong> course, I wanted to build something more than a console program.  
+      So I created a small web application that helps visualize data interactively — where users can add data manually, upload CSV files, and even make predictions using <strong>Linear Regression</strong>.
+    </p>
+
+    <figure>
+      <img src="assets/img/viz_option.png" alt="Main menu of the data visualization app" loading="lazy">
+      <figcaption>The main menu — simple options but a structured flow.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Core Features</h2>
+      <ul>
+        <li><strong>Add Data</strong> – Users can input country and population, which are sorted using the <em>Quick Sort</em> algorithm.</li>
+        <li><strong>Upload File</strong> – Upload a <code>.csv</code> file to display large datasets quickly.</li>
+        <li><strong>Prediction</strong> – Use a <em>Linear Regression</em> model to forecast future values.</li>
+      </ul>
+    </section>
+
+    <figure>
+      <img src="assets/img/viz_add_data.png" alt="Add data form with sorting and searching" loading="lazy">
+      <figcaption>The Add Data interface — combines form input and sorting logic.</figcaption>
+    </figure>
+
+    <section>
+      <h2>How It Works</h2>
+      <p>
+        I implemented <strong>Quick Sort</strong> and <strong>Binary Search</strong> in JavaScript to handle the uploaded data efficiently.  
+        Once the data is processed, it’s visualized using dynamic charts.  
+        For prediction, the app uses a small regression model implemented in Python (via precomputed values).
+      </p>
+    </section>
+
+    <figure>
+      <img src="assets/img/viz_linear_regression.png" alt="Prediction page using Linear Regression" loading="lazy">
+      <figcaption>Prediction feature — estimating population trends using Linear Regression.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Lessons Learned</h2>
+      <p>
+        This project was my first serious attempt to connect algorithmic logic with real-world visualization.  
+        It helped me understand how data moves from raw input to a meaningful insight — which is exactly what I aim to do as a <strong>future Data Engineer</strong>.
+      </p>
+    </section>
+
+    <p><a href="blog.html" class="link">← Back to Blog</a></p>
+  </article>
+</main>
+
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Ngô Thị Thương.</small>
+</footer>
+</body>
+</html>

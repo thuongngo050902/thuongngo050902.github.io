@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML5 semantics made simple — Ngô Thị Thương</title>
+  <meta name="description" content="Post: HTML5 semantics and accessibility basics." />
+  <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+  <a class="logo" href="index.html"><span aria-hidden="true">🌸</span><span class="logo-text">Ngô Thị Thương</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul id="menu" class="menu">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a href="map.html">Map</a></li><li><a href="policy.html">Policy</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+</header>
+
+<main class="container">
+  <article>
+    <header>
+      <h1>Learning Object-Oriented Programming through a Game</h1>
+      <time datetime="2025-10-22">Published on Oct 22, 2025</time>
+    </header>
+
+    <p>
+      In the <strong>Object-Oriented Programming</strong> course, we were asked to build a small game to apply OOP principles.  
+      My team decided to recreate <strong>Plants vs Zombies</strong> — a game I loved when I was younger.
+    </p>
+
+    <figure>
+      <img src="assets/img/project_pvz.jpg" alt="Plants vs Zombies gameplay illustration" loading="lazy">
+      <figcaption>Reimagining Plants vs Zombies using pure C++ and SFML.</figcaption>
+    </figure>
+
+    <section>
+      <h2>What the Project Does</h2>
+      <p>
+        The player can place plants on a grid, defend against zombies, and manage resources (sun points).  
+        It’s not just about graphics — it’s about structuring the logic behind every action.
+      </p>
+      <ul>
+        <li>Implemented <strong>Plant</strong> and <strong>Zombie</strong> as base classes.</li>
+        <li>Used <strong>inheritance</strong> for different plant and zombie types.</li>
+        <li>Handled <strong>collision</strong> and <strong>game state</strong> using encapsulated methods.</li>
+      </ul>
+    </section>
+
+    <figure>
+      <img src="assets/img/pvz_class_diagram.png" alt="UML class diagram for Plants vs Zombies project" loading="lazy">
+      <figcaption>UML class diagram showing relationships among managers and entities.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Challenges and Achievements</h2>
+      <p>
+        One of the hardest parts was managing interactions between multiple objects without breaking the game loop.  
+        I learned how encapsulation prevents side effects, and how inheritance keeps the code clean and scalable.
+      </p>
+      <p>
+        In the end, seeing the game run — even with simple graphics — felt rewarding.  
+        It was proof that OOP isn’t just theory, it’s a way to make ideas come alive.
+      </p>
+    </section>
+
+    <section>
+      <h2>Takeaway</h2>
+      <p>
+        Through this project, I not only understood OOP deeply but also realized how much I enjoy building systems from scratch.  
+        It strengthened my foundation for software engineering and prepared me for future work in data systems and backend logic.
+      </p>
+    </section>
+
+    <p><a href="blog.html" class="link">← Back to Blog</a></p>
+  </article>
+</main>
+
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Ngô Thị Thương.</small>
+</footer>
+</body>
+</html>

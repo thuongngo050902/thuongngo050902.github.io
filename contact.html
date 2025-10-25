@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Ngô Thị Thương</title>
+  <meta name="description" content="Full-featured contact/booking form with validation." />
+  <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+  <a class="logo" href="index.html"><span aria-hidden="true">🌸</span><span class="logo-text">Ngô Thị Thương</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul id="menu" class="menu">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li><li><a aria-current="page" href="contact.html">Contact</a></li>
+      <li><a href="map.html">Map</a></li><li><a href="policy.html">Policy</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+</header>
+
+<main class="container">
+  <h1>Contact</h1>
+
+  <form id="contactForm" action="#" method="post" novalidate>
+  <fieldset>
+    <legend>Your information</legend>
+
+    <!-- Text -->
+    <label for="fullName">Full name</label>
+    <input id="fullName" name="fullName" type="text" placeholder="Nguyen Van A" required>
+
+    <!-- Email -->
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+    <!-- Tel with pattern -->
+    <label for="tel">Phone</label>
+    <input id="tel" name="tel" type="tel"
+           pattern="^[0-9\-+\s]{8,15}$" placeholder="090-123-4567" required
+           aria-describedby="telHelp">
+    <small id="telHelp" class="muted">Digits, space, + or - (8–15 chars).</small>
+
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" minlength="6" required>
+
+    <!-- Number -->
+    <label for="age">Age</label>
+    <input id="age" name="age" type="number" min="10" max="120" step="1">
+
+    <!-- Date -->
+    <label for="date">Preferred date</label>
+    <input id="date" name="date" type="date">
+
+    <!-- Range + output -->
+    <label for="scope">Scope (0–100%) <output id="scopeOut">50</output>%</label>
+    <input id="scope" name="scope" type="range" min="0" max="100" step="5" value="50"
+           oninput="scopeOut.value=value">
+
+    <!-- Color -->
+    <label for="color">Favorite color</label>
+    <input id="color" name="color" type="color" value="#2563eb">
+
+    <!-- File -->
+    <label for="file">Attach file</label>
+    <input id="file" name="file" type="file" accept="image/*,.pdf,.csv">
+
+    <!-- Select + optgroup -->
+    <label for="topic">Topic</label>
+    <select id="topic" name="topic" required>
+      <optgroup label="Work">
+        <option value="website">Website</option>
+        <option value="data">Data pipeline</option>
+      </optgroup>
+      <optgroup label="Other">
+        <option value="talk">Talk/Workshop</option>
+        <option value="other">Other</option>
+      </optgroup>
+    </select>
+
+    <!-- Radio -->
+    <fieldset>
+      <legend>Budget range</legend>
+      <label><input type="radio" name="budget" value="<500" required> &lt; 500$</label>
+      <label><input type="radio" name="budget" value="500-1000"> 500–1000$</label>
+      <label><input type="radio" name="budget" value=">1000"> &gt; 1000$</label>
+    </fieldset>
+
+    <!-- Checkbox -->
+    <fieldset>
+      <legend>Extras</legend>
+      <label><input type="checkbox" name="extras" value="seo"> SEO</label>
+      <label><input type="checkbox" name="extras" value="analytics"> Analytics</label>
+      <label><input type="checkbox" name="extras" value="a11y"> Accessibility audit</label>
+    </fieldset>
+
+    <!-- Datalist -->
+    <label for="stack">Preferred stack</label>
+    <input id="stack" name="stack" list="stacks" placeholder="Type to search…">
+    <datalist id="stacks">
+      <option value="Python"></option>
+      <option value="C++"></option>
+      <option value="HTML/CSS/JS"></option>
+      <option value="React"></option>
+    </datalist>
+
+    <!-- Textarea -->
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <!-- Hidden + honeypot -->
+    <input type="hidden" name="source" value="contact-page">
+    <div style="position:absolute;left:-9999px" aria-hidden="true">
+      <label for="hp">Leave empty</label>
+      <input id="hp" name="hp" type="text" tabindex="-1" autocomplete="off">
+    </div>
+
+    <!-- Actions -->
+    <div class="form-actions">
+      <button class="btn" type="submit">Submit</button>
+      <button class="btn btn--ghost" type="reset">Reset</button>
+    </div>
+
+    <!-- Friendly message -->
+    <div id="formNote" class="form-note" aria-live="polite"></div>
+  </fieldset>
+
+  <!-- Bonus: progress & meter -->
+  <div class="bonus">
+    <label for="progressDemo">Upload progress</label>
+    <progress id="progressDemo" max="100" value="35">35%</progress>
+    <label for="score">A11y score</label>
+    <meter id="score" min="0" low="40" high="80" max="100" value="72">72</meter>
+  </div>
+</form>
+
+
+  <div class="bonus">
+    <label for="progressDemo">Upload progress</label>
+    <progress id="progressDemo" max="100" value="35">35%</progress>
+
+    <label for="score">A11y score</label>
+    <meter id="score" min="0" low="40" high="80" max="100" value="72">72</meter>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Ngô Thị Thương.</small>
+</footer>
+</body>
+</html>

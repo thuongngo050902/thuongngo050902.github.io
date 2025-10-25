@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Ngô Thị Thương</title>
+  <meta name="description" content="About me: background, skills, interests." />
+  <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+  <a class="logo" href="index.html"><span aria-hidden="true">🌸</span><span class="logo-text">Ngô Thị Thương</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul id="menu" class="menu">
+      <li><a href="index.html">Home</a></li><li><a aria-current="page" href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a href="map.html">Map</a></li><li><a href="policy.html">Policy</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+</header>
+
+<main class="container">
+  <article class="about">
+    <header>
+      <h1>About me</h1>
+    </header>
+
+    <div class="about__grid">
+      <img class="avatar" src="assets/img/avatar.jpg" alt="Portrait of Ngô Thị Thương" width="260" height="260" loading="lazy">
+
+      <section>
+        <p>
+          I'm <strong>Ngô Thị Thương</strong>, a Computer Science student at
+          <strong>International University – VNU-HCM</strong>. I have a strong passion for learning programming and exploring new technologies.
+          My goal is to become a <strong>Data Engineer</strong> who builds reliable, scalable data pipelines.
+        </p>
+
+        <h2>Skills</h2>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <!-- CTA: link sang Projects -->
+        <p class="cta" style="margin-top:1rem">
+          <a class="btn" href="projects.html">See Projects</a>
+          <a class="btn btn--ghost" href="contact.html">Contact me</a>
+        </p>
+      </section>
+    </div>
+  </article>
+</main>
+
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Ngô Thị Thương.</small>
+</footer>
+</body>
+</html>
